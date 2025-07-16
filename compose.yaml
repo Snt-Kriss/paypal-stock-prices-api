@@ -1,0 +1,23 @@
+# docker-based development environment
+services:
+  app:
+    image: paypal-stock-api:v1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    ports:
+      - "8002:8002"
+
+# attach volume, and enable watch- to rebuild container
+    volumes:
+      - ./src:/code:rw
+    develop:
+      watch:
+        - action: rebuild
+          path: Dockerfile
+        - action: rebuild
+          path: requirements.txt
+        - action: rebuild
+          path: compose.yaml
