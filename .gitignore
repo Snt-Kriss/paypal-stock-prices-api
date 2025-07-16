@@ -1,5 +1,7 @@
 .venv
 .idea/
+.idea/workspace.xml
+.idea/inspectionProfiles/profiles_settings.xml
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
