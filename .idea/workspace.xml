@@ -7,6 +7,7 @@
     <list default="true" id="afe2f985-6f22-4f93-9bd7-4676facc8c97" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/migrate_sqlite_to_timescale.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boot/docker-run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/boot/docker-run.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
@@ -94,7 +95,7 @@
       <workItem from="1752684091577" duration="4907000" />
       <workItem from="1752725946167" duration="31000" />
       <workItem from="1752726068031" duration="1632000" />
-      <workItem from="1752737501746" duration="7757000" />
+      <workItem from="1752737501746" duration="8226000" />
     </task>
     <servers />
   </component>
