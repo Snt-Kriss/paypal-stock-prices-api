@@ -13,6 +13,7 @@ services:
 # attach volume, and enable watch- to rebuild container
     volumes:
       - ./src:/code:rw
+      - ./stock.db:/stock.db
     develop:
       watch:
         - action: rebuild
