@@ -1,7 +1,6 @@
 from fastapi import Depends, HTTPException
-import crud
-import schemas
-from database import SessionLocal
+from src import crud, schemas
+from src.database import SessionLocal
 from fastapi import FastAPI
 from datetime import date
 from sqlalchemy.orm import Session

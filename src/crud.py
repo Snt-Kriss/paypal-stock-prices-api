@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
 from datetime import date
-import models
+from src import models
 
 
 def get_stocks(db: Session, skip: int=0, limit: int=100,week: date=None):

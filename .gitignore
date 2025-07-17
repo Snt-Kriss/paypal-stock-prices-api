@@ -3,6 +3,7 @@
 .idea/workspace.xml
 .idea/inspectionProfiles/profiles_settings.xml
 .env
+compose.yaml
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

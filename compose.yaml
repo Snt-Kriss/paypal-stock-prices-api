@@ -12,7 +12,7 @@ services:
 
 # attach volume, and enable watch- to rebuild container
     volumes:
-      - ./src:/code:rw
+      - .:/code:rw
       - ./stock.db:/stock.db
     develop:
       watch:
@@ -22,3 +22,19 @@ services:
           path: requirements.txt
         - action: rebuild
           path: compose.yaml
+
+  db:
+    image: timescale/timescaledb:latest-pg16
+    container_name: timescaledb
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: stocks
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

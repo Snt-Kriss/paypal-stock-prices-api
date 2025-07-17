@@ -7,3 +7,4 @@ requests
 python-dotenv
 pandas
 sqlite3-0611
+psycopg2-binary
